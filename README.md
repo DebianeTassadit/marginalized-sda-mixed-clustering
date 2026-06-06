@@ -11,7 +11,7 @@ cosine similarity for categorical ones) into a single affinity structure that gu
 no iterative optimization required.
 
 > **Stack:** Python · NumPy · SciPy · scikit-learn
-> 📄 Full write-up: [`paper.pdf`](./paper.pdf)
+> Full write-up: [`paper.pdf`](./paper.pdf)
 
 ---
 
