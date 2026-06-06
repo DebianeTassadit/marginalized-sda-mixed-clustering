@@ -17,14 +17,14 @@ no iterative optimization required.
 
 ## Method
 
-1. **Preprocess** — standardize numerical features, one-hot encode categorical features.
-2. **Multi-view similarity** — `S_num = RBF(X_num, γ)`, `S_cat = cosine(X_cat)`, row-normalized,
+1. **Preprocess** - standardize numerical features, one-hot encode categorical features.
+2. **Multi-view similarity** - `S_num = RBF(X_num, γ)`, `S_cat = cosine(X_cat)`, row-normalized,
    then fused: `S_fused = α · S_num + (1 − α) · S_cat`.
-3. **Graph-regularized mSDA** — at each layer, the dropout corruption is *analytically marginalized*
+3. **Graph-regularized mSDA** - at each layer, the dropout corruption is *analytically marginalized*
    (Chen et al., 2012), giving a closed-form map `W = (Q + λI)⁻¹ P`; the codes are smoothed over
    `S_fused` and passed through `tanh`. Layer encodings are concatenated.
 4. **Spectral clustering** on the learned representation (`rbf` or `nearest_neighbors` affinity).
-5. **Evaluation** — external (NMI, ARI, Accuracy via Hungarian alignment) and internal
+5. **Evaluation** - external (NMI, ARI, Accuracy via Hungarian alignment) and internal
    (Silhouette, Calinski–Harabasz, Davies–Bouldin) metrics.
 
 ## Results (NMI vs. k-SubMix, from the paper)
