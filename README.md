@@ -12,8 +12,6 @@ no iterative optimization required.
 
 > **Stack:** Python · NumPy · SciPy · scikit-learn
 > 📄 Full write-up: [`paper.pdf`](./paper.pdf)
-> ℹ️ This repository is a clean, self-contained **reimplementation of the method from the paper**
-> (the original internship code was lost); exact numbers may differ slightly from the manuscript.
 
 ---
 
@@ -83,7 +81,7 @@ python experiments/run.py --dataset heart --affinity rbf
 
 ## Credit
 
-Research-internship work by **Tassadit Debiane**, supervised by **Dr. Lazhar (Lounis) Labiod**,
+Research-internship work by **Tassadit Debiane**, supervised by **Dr. Lazhar Labiod**,
 Centre Borelli, CNRS — Université Paris Cité. All datasets are open/public (UCI ML Repository
 and synthetic benchmarks following the k-SubMix protocol). Builds on the marginalized denoising
 autoencoder of Chen, Xu, Weinberger & Sha (ICML 2012).
