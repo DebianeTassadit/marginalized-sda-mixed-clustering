@@ -1,0 +1,6 @@
+numpy>=1.23
+scipy>=1.9
+scikit-learn>=1.2
+# optional, only for UCI loaders:
+# ucimlrepo>=0.0.7
+# pandas>=1.5
